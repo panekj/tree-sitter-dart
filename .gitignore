@@ -1,22 +1,38 @@
-node_modules
-.node-version
-build
-*.log
-/test.js
-/examples/npm
-package-lock.json
-/parser.exp
-/parser.lib
-/parser.obj
-/scanner.obj
-/.idea/
-.dart_tool
-.packages
-pubspec.lock
-.antlr
+# Rust artifacts
+Cargo.lock
+target/
+
+# Node artifacts
+build/
+prebuilds/
+node_modules/
+*.tgz
+
+# Swift artifacts
+.build/
+
+# Go artifacts
+go.sum
+_obj/
+
+# Python artifacts
+.venv/
+dist/
+*.egg-info
+*.whl
+
+# C artifacts
+*.a
 *.so
-*.dll
+*.so.*
 *.dylib
-doc
-.vscode
-target
+*.dll
+*.pc
+
+# Example dirs
+/examples/*/
+
+# Grammar volatiles
+*.wasm
+*.obj
+*.o
